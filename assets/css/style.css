@@ -1,0 +1,21 @@
+body {
+    background-color: skyblue;
+}
+
+header nav, ul, li {
+    display:inline;
+    text-align: center;
+    list-style-type: none;
+    font-size: 36px;
+    font-family: Helvetica;
+}
+header nav {
+    float: left;
+    margin: 50px 50px;
+    padding: 20px 100px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
