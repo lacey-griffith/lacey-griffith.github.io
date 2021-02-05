@@ -69,6 +69,7 @@ header nav ul li a {
     width: 200px;
     height: auto;
     flex:1;
+    border-radius: 5px;
 }
 .about p {
     color:white;
@@ -95,6 +96,9 @@ header nav ul li a {
 .project {
     flex:1;
 }
+.project img {
+    border-radius: 5px;
+}
 
 /* CONTACT SECTION */
 .contact {
@@ -110,4 +114,12 @@ header nav ul li a {
 }
 .contact a {
     color:white;
+}
+.logo-links {
+    padding: 10px;
+    flex:1;
+    text-align: center;
+}
+.logo-links img {
+    border-radius: 15px;
 }
