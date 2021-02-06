@@ -205,7 +205,7 @@ header nav ul li a:hover {
 /*575px and below*/
 @media screen and (max-width:575px) {
     header nav ul li a {
-        font-szie: 6.5vw;
+        font-size: 6.5vw;
     }
     .about div p {
         width: 100%;
