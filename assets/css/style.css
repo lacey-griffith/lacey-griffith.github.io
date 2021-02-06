@@ -163,6 +163,11 @@ header nav ul li a:hover {
     .contact img {
         width: 50%;
     }
+    .about {
+        padding:0;
+        width: 100%;
+    }
+
 }
 
 /*768px and below*/
@@ -179,6 +184,8 @@ header nav ul li a:hover {
     .about p {
         width: 99%;
         font-size: 3.5vw;
+        padding: 0;
+        text-align: center;
     }
     .projects h3 {
         font-size: 5vw;
@@ -225,5 +232,24 @@ header nav ul li a:hover {
     .project p {
         font-size: 5vw;
     }
-
+}
+@media screen and (max-width:375px) {
+    .about img {
+        width: 80%;
+    }
+    #about-me {
+        padding: 0;
+        text-align: center;
+        width: 95%;
+        padding-bottom: 90px;
+    }
+    #projects-deployed {
+        padding-bottom: 100px;
+    }
+    .logo-links img {
+        width: 85%;
+    }
+    #contact-me {
+        padding: 50px;
+    }
 }
