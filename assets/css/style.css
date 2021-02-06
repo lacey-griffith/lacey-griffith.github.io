@@ -15,9 +15,12 @@ header {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    margin: 50px 0 250px 0;
+    margin: 70px 0 250px 0;
 }
-
+header img {
+    width: 450px;
+    height: auto;
+}
 header div {
     flex: 3 70%;
     text-align: center;
@@ -41,12 +44,16 @@ header nav ul li a {
     text-decoration: none;
     list-style: none;
     font-size: 28px;
-    margin: 20px 85px;
+    margin: 20px 45px;
+}
+header nav ul li a:hover {
+    color:#68c9ff;
 }
 /* CONTENT */
 .section-title {
     color:#68c9ff;
     font-size: 40px;
+    font-weight: lighter;
     padding-bottom: 20px;
     width: 100%;
     margin: 50px;
@@ -61,21 +68,19 @@ header nav ul li a {
 }
 /* ABOUT SECTION */
 .about {
-    margin: 50px 10px 10px 10px;
+    margin: 80px 10px 10px 10px;
     display:flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 .about img {
-    width: 200px;
-    height: auto;
     flex:1;
     border-radius: 5px;
 }
 .about p {
     color:white;
     font-size: 22px;
-    padding: 10px;
+    padding: 50px;
     flex: 2;
 }
 
@@ -123,4 +128,15 @@ header nav ul li a {
 }
 .logo-links img {
     border-radius: 15px;
+    /*used code from stackoverflow*/
+    /* https://stackoverflow.com/questions/23695090/spin-or-rotate-an-image-on-hover */
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+    transition: transform .8s ease-in-out;
+}
+.logo-links img:hover {
+    border-radius: 50%;
+    /*used code from stackoverflow*/
+    /* https://stackoverflow.com/questions/23695090/spin-or-rotate-an-image-on-hover */
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
 }
