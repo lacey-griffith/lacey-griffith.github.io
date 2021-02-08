@@ -168,6 +168,9 @@ header nav ul li a::after {
     .projects p {
         font-size:1.4vw;
     }
+    section {
+        padding:15px;
+    }
 }
 
 /*980px and below*/
