@@ -213,34 +213,34 @@ header nav ul li a::after {
 
 /*768px and below*/
 @media screen and (max-width:768px) {
-header nav ul li a {
-    font-size: 5vw;
-}
-.about p {
-    width: 95%;
-    font-size: 4.5vw;
-    padding: 0;
-    text-align: center;
-}
-#about-me {
-    padding: 0 2px;
-}
-.project {
-    flex: 100%;
-}
-.projects img {
-    width: 95%;
-    padding-top: 5px;
-}
-  .project h3 {
-    font-size: 8vw;
-}
-.projects p {
-    font-size: 5vw;
-}
-#contact-me {
-    padding: 50px;
-}}
+    header nav ul li a {
+        font-size: 5vw;
+    }
+    .about p {
+        width: 95%;
+        font-size: 4.5vw;
+        padding: 0;
+        text-align: center;
+    }
+    #about-me {
+        padding: 0 2px;
+    }
+    .project {
+        flex: 100%;
+    }
+    .projects img {
+        width: 95%;
+        padding-top: 5px;
+    }
+    .project h3 {
+        font-size: 8vw;
+    }
+    .projects p {
+        font-size: 5vw;
+    }
+    #contact-me {
+        padding: 50px;
+    }}
 
 /*704px and below*/
 @media screen and (max-width:704px) {
