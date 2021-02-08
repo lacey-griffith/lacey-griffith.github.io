@@ -1,52 +1,61 @@
-* {
+* html, body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
+:root {
+    --primary-color: black;
+    --secondary-color: skyblue;
+}
+
+/* used css from https://colorzilla.com/gradient-editor/#20808a+21,15b2b5+45,30e8e4+73,30e8e4+73&1+13,0+100 for gradient background*/
 body {
-    background-color: black;
+background: -moz-linear-gradient(top, rgba(32,128,138,1) 13%, rgba(32,128,138,0.91) 21%, rgba(21,178,181,0.63) 45%, rgba(48,232,228,0.31) 73%, rgba(48,232,228,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(32,128,138,1) 13%,rgba(32,128,138,0.91) 21%,rgba(21,178,181,0.63) 45%,rgba(48,232,228,0.31) 73%,rgba(48,232,228,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(32,128,138,1) 13%,rgba(32,128,138,0.91) 21%,rgba(21,178,181,0.63) 45%,rgba(48,232,228,0.31) 73%,rgba(48,232,228,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#20808a', endColorstr='#0030e8e4',GradientType=0 ); /* IE6-9 */}
+/* end borrowed code*/
+
+body {
+    background-color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
 section {
-    padding: 100px;
+    padding: 100px 0 0 100px;
 }
 /* HEADER */
 header {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     flex-wrap: wrap;
-    margin: 70px 0 250px 0;
-}
-header img {
-    width: 450px;
-    height: auto;
-}
-header div {
-    flex: 3 70%;
-    text-align: center;
-}
-
-header h1 {
-    font-size: 55px;
-    color: white;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    background-color: rgba(32,128,138,0.91);
 }
 header nav ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: flex-start;
     list-style: none;
     padding: 20px 0;
     margin: 10px 0;
 }
 header nav ul li a {
-    color:white;
+    color:var(--primary-color);
     text-decoration: none;
     list-style: none;
     font-size: 28px;
-    margin: 20px 45px;
+    margin: 20px;
 }
 header nav ul li a:hover {
-    color:#68c9ff;
+    color:black;
+    font-weight: bold;
+}
+header nav ul li a::after {
+    color:var(--primary-color);
+    font-weight: bold;
 }
 /* CONTENT */
 .section-title {
@@ -62,12 +71,16 @@ header nav ul li a:hover {
     display:flex;
     width:100%;
 }
+.page-break {
+    width: 100%;
+    height: 600px;
+}
 .section {
     display:flex;
 }
 /* ABOUT SECTION */
 .about {
-    margin: 80px 10px 10px 10px;
+    padding: 300px 0 0 0;
     display:flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -76,25 +89,24 @@ header nav ul li a:hover {
     border-radius: 50px 8px 50px 8px;
 }
 .about p {
-    color:white;
+    color:--primary-color;
     font-size: 22px;
-    padding: 0 0 0 50px;
     width: 900px;
 }
 
 /* PROJECT SECTION */
 .projects {
-    margin: 50px 10px 10px 10px;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding: 300px 0 0 0;
 }
 .projects p {
-    color:white;
+    color:--primary-color;
 }
 .project-title {
-    color:skyblue;
+    color:--secondary-color;
     font-weight: bold;
 }
 .project {
@@ -117,16 +129,15 @@ header nav ul li a:hover {
     width: 100%;
     display:flex;
     flex-wrap:wrap;
-    justify-content: space-between;
+    justify-content: center;
 }
 .contact p {
-    color:white;
+    color:--primary-color;
 }
 .contact a {
-    color:white;
+    color:--primary-color;
 }
 .logo-links {
-    padding: 10px;
     flex:1;
     text-align: center;
 }
@@ -148,105 +159,100 @@ header nav ul li a:hover {
 /* media queries*/
 /*1530px and above*/
 @media screen and (min-width:1530px) {
-    #projects-deployed {
-        padding: 10px;
-        text-align: center;
-    }
     .logo-links img {
-        width:20%;
+        width: 20%;
     }
-    #contact-me {
-        padding: 100px 0 20px 0;
+    .projects h3 {
+        font-size: 2vw;
     }
-    .projects {
-        display:flex;
-        justify-content: center;
-    }
-    .about p {
-        padding: 55px 0 0 0;
-    }
-    .about {
-        padding: 105px 10px 10px 10px;
+    .projects p {
+        font-size:1.4vw;
     }
 }
 
 /*980px and below*/
 @media screen and (max-width:980px) {
-    .projects {
-        display: flex;
-        flex-flow: row wrap;
+    header nav ul li a {
+        font-size: 5vw;
     }
-    .project {
-        flex: 0 50%;
-        padding: 2px 0 15px 0;
+    .about p {
+        width: 95%;
+        font-size: 4vw;
+        padding: 0;
+        text-align: center;
     }
-    .project h3 {
-        font-size: 3.5vw;
+    .about img {
+        width:120%
     }
-    .project p {
-        font-size: 2.25vw;
+    #about-me {
+        padding:0 1px;
     }
     #projects-deployed {
-        padding: 10px;
+        padding:0;
+    }
+    .project {
+        flex: 100%;
         text-align: center;
+    }
+    .projects img {
+        width:95%;
+    }
+    .project h3 {
+        font-size: 8vw;
+    }
+    .project p {
+        font-size: 5vw;
     }
     .contact img {
         width: 40%;
     }
-    .about {
-        padding:0;
-        width: 100%;
-    }
-
 }
 
 /*768px and below*/
 @media screen and (max-width:768px) {
-    header img {
-        width: 80%;
-    }
-    header nav {
-        width: 95%;
-    }
-    .about {
-        width: 100%;
-    }
-    .about p {
-        width: 99%;
-        font-size: 3.5vw;
-        padding: 0;
-        text-align: center;
-    }
-    .projects h3 {
-        font-size: 5vw;
-    }
-    .projects p {
-        font-size: 3.3vw;
-    }
+header nav ul li a {
+    font-size: 5vw;
 }
+.about p {
+    width: 95%;
+    font-size: 4.5vw;
+    padding: 0;
+    text-align: center;
+}
+#about-me {
+    padding: 0 2px;
+}
+.project {
+    flex: 100%;
+}
+.projects img {
+    width: 95%;
+    padding-top: 5px;
+}
+  .project h3 {
+    font-size: 8vw;
+}
+.projects p {
+    font-size: 5vw;
+}
+#contact-me {
+    padding: 50px;
+}}
 
 /*704px and below*/
 @media screen and (max-width:704px) {
     header {
         display: flex;
-        flex-direction: column;
         justify-content: center;
     }
     header nav ul li {
         width: 100%;
-        text-align: center;
         padding-top: 15px;
     }
-}
-/*575px and below*/
-@media screen and (max-width:575px) {
-    header nav ul li a {
-        font-size: 6.5vw;
-    }
-    .about div p {
-        width: 100%;
-        padding:0;
-        font-size: 3.7vw;
+    #about-me {
+        padding:0 2px;
+        text-align: center;
+        width: 95%;
     }
     .project {
         flex: 100%;
@@ -260,8 +266,48 @@ header nav ul li a:hover {
     .project p {
         font-size: 5vw;
     }
+    #contact-me {
+        padding: 50px;
+    }
+}
+/*575px and below*/
+@media screen and (max-width:575px) {
+    header nav ul li a {
+        font-size: 6.5vw;
+    }
+    header nav ul li {
+        width: 100%;
+    }
+    .about div p {
+        width: 100%;
+        padding:0;
+        font-size: 3.7vw;
+    }
+    #about-me {
+        padding: 0 2px 0;
+        text-align: center;
+        width: 95%;
+    }
+    .project {
+        flex: 100%;
+    }
+    .project img {
+        width: 75%;
+    }
+    .project h3 {
+        font-size: 8.5vw;
+    }
+    .project p {
+        font-size: 5vw;
+    }
+    #contact-me {
+        padding: 50px;
+    }
 }
 @media screen and (max-width:375px) {
+    header nav ul li {
+        width: 100%;
+    }
     .about img {
         width: 80%;
     }
@@ -269,13 +315,15 @@ header nav ul li a:hover {
         padding: 0;
         text-align: center;
         width: 95%;
-        padding-bottom: 90px;
+    }
+    .about p {
+        font-size: 1vw;
     }
     #projects-deployed {
         padding-bottom: 100px;
     }
     .logo-links img {
-        width: 85%;
+        width: 60%;
     }
     #contact-me {
         padding: 50px;
