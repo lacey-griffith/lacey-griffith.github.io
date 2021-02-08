@@ -14,4 +14,4 @@ https://lacey-griffith.github.io/
 Made by Lacey Griffith
 
 ## Image
-![Site Image](assets/images/Portfolio_fullsize.png)
+![Site Image](assets/images/portfolio-fullsize.png)
