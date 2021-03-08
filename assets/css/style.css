@@ -127,6 +127,9 @@ header nav ul li a::after {
     opacity:100%;
     transform: scale(1.5);
 }
+.project-info p {
+    margin: 0 25px 0 0;
+}
 
 /* CONTACT SECTION */
 .contact {

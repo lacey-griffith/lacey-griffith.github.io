@@ -15,3 +15,6 @@ Made by Lacey Griffith
 
 ## Image
 ![Site Image](assets/images/portfolio-fullsize.png)
+
+## Updates
+*Added additional projects and repositories for existing and new projects
