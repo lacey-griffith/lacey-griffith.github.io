@@ -1,112 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./assets/css/style.css">
-    </head>
-    <title>Lacey Griffith</title>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#top">home</a></li>
-                <li><a href="#about-me">about</a></li>
-                <li><a href="#projects-deployed">projects</a></li>
-                <li><a href="#contact-me">contact</a></li>
-            </ul>
-        </nav>
-    </header>
-<body id ="top">
-    <h1>Lacey Griffith</h1>
-<div class="page-break">
-</div>
-<!-- about me -->
-<section id="about-me">
-    <div class="about">
-        <div>
-        <img src="assets/images/profilepic.jpg" alt="Lacey sitting in front of wooden lattice">
-        </div>
-        <div>
-        <p>
-            Nice to meet you! I'm Lacey, currently a student at the University of Texas at Austin
-            following my goals to become a Web Developer. Before this journey, I owned a coffee shop outside
-            of Austin. It was tough, tiring and frustrating. More importantly, it was rewarding.
-            I learned to solve problems, often on the fly. I drank awesome coffee (definitely a perk!) and I met people on all
-            walks of life, which taught me the value in human connection. I experienced the importance of communication, persistence and clarity. 
-            I learned that you can start something new and be pretty bad at it but every day you'll get better
-            if you commit the time to it. <br/><br/>
 
-            When I'm not working on code or design, I'm typically cooking or outside with my son and dog.
-            I love reading, music, photography and making lists! I am an INFJ actively trying to understand
-            the ways of extroverts.
-        </p>
-        </div>
-    </div>
-</section>
-<div class="page-break">
-</div>
-<!-- projects -->
-<section id="projects-deployed">
-    <div class="projects">
-        <article class="project">
-            <a href="https://lacey-griffith.github.io/run-buddy/"><img src="assets/images/run-buddy_ (icon).png" alt="Screenshot of Run Buddy website"></a>
-            <div class="project-info">
-                <h3 class="project-title">Run Buddy</h3>
-                <p> Run Buddy was created during Coding Bootcamp. Through this project I 
-                    gained experience with HTML, CSS, Git and GitHub to create a landing page for
-                    a company needing to increase user sign-ups and interaction. 
-                </p>
-                <p>Click <a href="https://github.com/lacey-griffith/run-buddy">here</a> to visit the repository for this project.</p>
-            </div>
-        </article>
-        <article class="project">
-            <a href="https://lacey-griffith.github.io/friendly-parakeet/"><img src="assets/images/PWgen_icon.png" alt="Screenshot of Password Generator website"></a>
-            <div class="project-info">
-                <h3 class="project-title">Password Generator</h3>
-                <p>
-                    Password Generator was an introduction to JavaScript. The capabilities of the language became clearer as I progressed. I was assigned to write the Javascript to generate a randomized 
-                    password based off user selected criteria. I used resources such as MDN and W3Schools when I ran into a problem I wasn't familiar on how to solve.
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<title>Lacey Griffith</title>
+<header>
+        <ul class="nav">
+            <li class="nav-item"><a class="nav-link" href="#top">home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects-deployed">projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact-me">contact</a></li>
+        </ul>
+</header>
 
-                </p>
-                <p>Click <a href="https://github.com/lacey-griffith/friendly-parakeet">here</a> to visit the repository for this project.</p>
+<body id="top">
+    <div class="page-break">
+    </div>
+    <!-- about me -->
+    <div class="container about-me" id="about-me">
+        <div class="row">
+            <div class="col img-holder">
+                <img class="about-img" src="assets/images/profilepic.jpg"
+                    alt="Lacey sitting in front of wooden lattice">
             </div>
-        </article>
-        <article class="project">
-            <a href="https://lacey-griffith.github.io/taskinator/"><img src="assets/images/Taskinator_icon.png" alt="Screenshot of Task Manger website"></a>
-            <div class="project-info">
-                <h3 class="project-title">Task Manager</h3>
+            <div class="col about-me">
+                <p><h2>Lacey Griffith</h2></p>
                 <p>
-                    Task Manager introduced how to use localStorage and creating DOM elements dynamically. I learned to use
-                    the console for debugging, testing my code and for finding element values in the browser.
+                    Nice to meet you! I'm Lacey, currently a student at the University of Texas at Austin
+                    following my goals to become a Web Developer. Before this journey, I owned a coffee shop outside
+                    of Austin. It was tough, tiring and frustrating. More importantly, it was rewarding.
+                    I learned to solve problems, often on the fly. I drank awesome coffee (definitely a perk!) and I met
+                    people on all
+                    walks of life, which taught me the value in human connection. I experienced the importance of
+                    communication, persistence and clarity.
+                    I learned that you can start something new and be pretty bad at it but every day you'll get better
+                    if you commit the time to it. <br /><br />
+
+                    When I'm not working on code or design, I'm typically cooking or outside with my son and dog.
+                    I love reading, music, photography and making lists! I am an INFJ actively trying to understand
+                    the ways of extroverts.
                 </p>
-                <p>Click <a href="https://github.com/lacey-griffith/taskinator">here</a> to visit the repository for this project.</p>
             </div>
-        </article>
-        
-    </div>
-</section>
-<div class="page-break">
-</div>
-<!-- contact -->
-<section id="contact-me">
-    <div class="contact">
-        <div class="logo-links">
-            <a href="https://www.linkedin.com/in/lacey-griffith/" target="_blank">
-            <img src="assets/images/linkedin0-logo.png" alt="LinkedIn logo">
-            </a>
-        </div>
-        <div class="logo-links">
-            <a href="https://github.com/lacey-griffith" target="_blank">
-            <img src="assets/images/github0-logo.png" alt="GitHub logo">
-            </a>
-        </div>
-        <div class="logo-links">
-            <a href="mailto:lacey.griffith04@gmail.com" target="_blank">
-            <img src="assets/images/email-logo-transparent.png" alt="Letter icon">
-            </a>
         </div>
     </div>
-</section>
+
+    <div class="page-break">
+    </div>
+    <!-- projects -->
+    <div class="container projects-deployed" id="projects-deployed">
+        <!-- Run Buddy -->
+        <div class="row">
+            <div class="col project">
+                <a href="https://lacey-griffith.github.io/run-buddy/"><img class="project-img"
+                        src="assets/images/run-buddy_ (icon).png" alt="Screenshot of Run Buddy website"></a>
+                <div class="project-info">
+                    <h3 class="project-title">Run Buddy</h3>
+                    <p> Run Buddy was created during Coding Bootcamp. Through this project I
+                        gained experience with HTML, CSS, Git and GitHub to create a landing page for
+                        a company needing to increase user sign-ups and interaction.
+                    </p>
+                    <p>Click <a href="https://github.com/lacey-griffith/run-buddy">here</a> to visit the repository for
+                        this project.</p>
+                </div>
+            </div>
+            <!-- Password Generator -->
+            <div class="col project">
+                <a href="https://lacey-griffith.github.io/friendly-parakeet/"><img class="project-img"
+                        src="assets/images/PWgen_icon.png" alt="Screenshot of Password Generator website"></a>
+                <div class="project-info">
+                    <h3 class="project-title">Password Generator</h3>
+                    <p>
+                        Password Generator was an introduction to JavaScript. The capabilities of the language became
+                        clearer as I progressed. I was assigned to write the Javascript to generate a randomized
+                        password based off user selected criteria. I used resources such as MDN and W3Schools when I ran
+                        into a problem I wasn't familiar on how to solve.
+
+                    </p>
+                    <p>Click <a href="https://github.com/lacey-griffith/friendly-parakeet">here</a> to visit the
+                        repository for this project.</p>
+                </div>
+            </div>
+            <div class="col project">
+                <a href="https://lacey-griffith.github.io/taskinator/"><img class="project-img"
+                        src="assets/images/Taskinator_icon.png" alt="Screenshot of Task Manger website"></a>
+                <div class="project-info">
+                    <h3 class="project-title">Task Manager</h3>
+                    <p>
+                        Task Manager introduced how to use localStorage and creating DOM elements dynamically. I learned
+                        to use
+                        the console for debugging, testing my code and for finding element values in the browser.
+                    </p>
+                    <p>Click <a href="https://github.com/lacey-griffith/taskinator">here</a> to visit the repository for
+                        this project.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-break">
+    </div>
+    <!-- contact -->
+    <div class="container" id="contact-me">
+        <div class="row contact">
+            <div class="col contact-img-holder">
+                <a href="https://www.linkedin.com/in/lacey-griffith/" target="_blank">
+                    <img class="logo-links" src="assets/images/linkedin0-logo.png" alt="LinkedIn logo">
+                </a>
+            </div>
+            <div class="col contact-img-holder">
+                <a href="https://github.com/lacey-griffith" target="_blank">
+                    <img class="logo-links" src="assets/images/github0-logo.png" alt="GitHub logo">
+                </a>
+            </div>
+            <div class="col contact-img-holder">
+                <a href="mailto:lacey.griffith04@gmail.com" target="_blank">
+                    <img class="logo-links" src="assets/images/email-logo-transparent.png" alt="Letter icon">
+                </a>
+            </div>
+            <div class="col contact-img-holder">
+                <a href="assets/images/LaceyGriffith_Resume.pdf" target="_blank">
+                    <img class="logo-links" src="assets/images/resume_logo.png" alt="document logo">
+                </a>
+            </div>
+        </div>
+    </div>
 
 </body>
+
 </html>
