@@ -44,6 +44,9 @@ header ul li a::after {
     font-weight: bold;
 }
 /* CONTENT */
+.intro-page-break {
+    height: 100px;
+}
 .page-break {
     width: 100%;
     height: 500px;
