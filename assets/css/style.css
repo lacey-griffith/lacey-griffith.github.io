@@ -131,3 +131,34 @@ header ul li a::after {
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
 }
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) { 
+    .name {
+        text-align: center;
+    }
+    .about-me { 
+        text-align: center;
+        margin: 0 5px;
+        width: 95%;
+    }
+    .projects-deployed, .project-title {
+        text-align: center;
+    }
+    .project-info {
+        text-align: center;
+        margin: 2px 5px;
+    }
+    .project {
+        text-align: center;
+        margin: 20px 0;
+    }
+}
+
+/* Small devices (landscape phones, less than 768px)*/
+@media (max-width: 767.98px) { }
+
+/* Medium devices (tablets, less than 992px)*/
+@media (max-width: 991.98px) { }
+
+/* Large devices (desktops, less than 1200px)*/
+@media (max-width: 1199.98px) { }
