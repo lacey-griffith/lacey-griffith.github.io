@@ -63,7 +63,7 @@ header ul li a::after {
 
 }
 .about-me-holder {
-    padding:0 0 0 10px;
+    padding:0;
     color:--primary-color;
     font-size: 1.4rem;
 }
@@ -131,15 +131,18 @@ header ul li a::after {
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
 }
-/* Extra small devices (portrait phones, less than 576px)*/
+/* Extra small devices (less than 576px)*/
 @media (max-width: 575.98px) { 
     .name {
         text-align: center;
     }
-    .about-me { 
+    p .about-me { 
         text-align: center;
-        margin: 0 5px;
         width: 95%;
+        margin: 0;
+    }
+    .about-me-holder {
+        margin: 0;
     }
     .projects-deployed, .project-title {
         text-align: center;
@@ -154,11 +157,60 @@ header ul li a::after {
     }
 }
 
-/* Small devices (landscape phones, less than 768px)*/
-@media (max-width: 767.98px) { }
+/* Small devices (less than 768px)
+@media (max-width: 767.98px) { 
+    .name {
+        text-align: center;
+    }
+    .about-img {
+        border-radius: 50px 8px 50px 8px;
+        width: 27rem;
+        height: auto;
+        object-fit: cover;
+    }
+    .about-me {
+        margin: 0 15px;
+        text-align: center;
+    }
+    .projects-deployed, .project-title {
+        text-align: center;
+    }
+    .project-info {
+        text-align: center;
+        margin: 2px 5px;
+    }
+    .project {
+        text-align: center;
+        margin: 20px 0;
+    }
+}*/
 
 /* Medium devices (tablets, less than 992px)*/
-@media (max-width: 991.98px) { }
-
-/* Large devices (desktops, less than 1200px)*/
-@media (max-width: 1199.98px) { }
+@media (max-width: 991.98px) {
+    .name {
+        text-align: center;
+    }
+    .about-img {
+        border-radius: 50px 8px 50px 8px;
+        width: 27rem;
+        height: auto;
+        object-fit: cover;
+        padding: 10px;
+    }
+    .about-me {
+        margin: 0;
+        padding: 0 15px;
+        text-align: center;
+    }
+    .projects-deployed, .project-title {
+        text-align: center;
+    }
+    .project-info {
+        text-align: center;
+        margin: 2px 5px;
+    }
+    .project {
+        text-align: center;
+        margin: 20px 0;
+    }
+ }
