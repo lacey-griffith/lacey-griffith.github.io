@@ -1,83 +1,113 @@
-* html, body {
+html body{
+/* used css from https://colorzilla.com/gradient-editor/#20808a+21,15b2b5+45,30e8e4+73,30e8e4+73&1+13,0+100 for gradient background */
     margin: 0;
     padding: 0;
+    height: 100;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background: -moz-linear-gradient(top, rgba(32, 128, 138, 1) 13%, rgba(32, 128, 138, 0.91) 21%, rgba(21, 178, 181, 0.63) 45%, rgba(48, 232, 228, 0.31) 73%, rgba(48, 232, 228, 0) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(32, 128, 138, 1) 13%, rgba(32, 128, 138, 0.91) 21%, rgba(21, 178, 181, 0.63) 45%, rgba(48, 232, 228, 0.31) 73%, rgba(48, 232, 228, 0) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(32, 128, 138, 1) 13%, rgba(32, 128, 138, 0.91) 21%, rgba(21, 178, 181, 0.63) 45%, rgba(48, 232, 228, 0.31) 73%, rgba(48, 232, 228, 0) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#20808a', endColorstr='#0030e8e4', GradientType=0);
+    /* IE6-9 */
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
 }
 :root {
     --primary-color: black;
     --secondary-color: skyblue;
 }
-
-/* used css from https://colorzilla.com/gradient-editor/#20808a+21,15b2b5+45,30e8e4+73,30e8e4+73&1+13,0+100 for gradient background*/
 body {
-background: -moz-linear-gradient(top, rgba(32,128,138,1) 13%, rgba(32,128,138,0.91) 21%, rgba(21,178,181,0.63) 45%, rgba(48,232,228,0.31) 73%, rgba(48,232,228,0) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top, rgba(32,128,138,1) 13%,rgba(32,128,138,0.91) 21%,rgba(21,178,181,0.63) 45%,rgba(48,232,228,0.31) 73%,rgba(48,232,228,0) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom, rgba(32,128,138,1) 13%,rgba(32,128,138,0.91) 21%,rgba(21,178,181,0.63) 45%,rgba(48,232,228,0.31) 73%,rgba(48,232,228,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#20808a', endColorstr='#0030e8e4',GradientType=0 ); /* IE6-9 */}
-/* end borrowed code*/
-
-body {
-    background-color: white;
-    font-family: Arial, Helvetica, sans-serif;
-}
-section {
-    padding: 100px 0 0 100px;
-}
-/* HEADER */
-header {
-    position: -webkit-sticky;
-    position: sticky;
+    font-family: Helvetica;
+} 
+/* NAV BAR */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
     top: 0;
-    z-index: 9999;
-    background-color: rgba(32,128,138,0.91);
+    left: 0;
+    background: -moz-linear-gradient(top, rgba(32, 128, 138, 1) 13%, rgba(32, 128, 138, 0.91) 21%, rgba(21, 178, 181, 0.63) 45%, rgba(48, 232, 228, 0.31) 73%, rgba(48, 232, 228, 0) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(32, 128, 138, 1) 13%, rgba(32, 128, 138, 0.91) 21%, rgba(21, 178, 181, 0.63) 45%, rgba(48, 232, 228, 0.31) 73%, rgba(48, 232, 228, 0) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(32, 128, 138, 1) 13%, rgba(32, 128, 138, 0.91) 21%, rgba(21, 178, 181, 0.63) 45%, rgba(48, 232, 228, 0.31) 73%, rgba(48, 232, 228, 0) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#20808a', endColorstr='#0030e8e4', GradientType=0);
+    /* IE6-9 */
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 40px;
+    font-family: 'Covered By Your Grace', cursive;
 }
-header ul li a {
-    color:var(--primary-color);
+.sidenav a {
+    padding: 8px 8px 8px 32px;
     text-decoration: none;
-    list-style: none;
+    font-size: 1.7rem;
+    color: black;
+    display: block;
+    transition: 0.3s;
 }
-header ul li a:hover {
-    color:black;
-    font-weight: bold;
+.sidenav a:hover {
+    /*color: rgba(32, 128, 138, 0.91);*/
+    color:white;
 }
-header ul li a::after {
-    color:var(--primary-color);
-    font-weight: bold;
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 20px;
+    margin-left: 50px;
 }
-/* CONTENT */
-.intro-page-break {
-    height: 100px;
-}
-.page-break {
-    width: 100%;
-    height: 500px;
-}
-.img-holder {
+/* PAGE HEADERS */
+.page-header {
     text-align: center;
-    padding: 0;
+    font-family: 'Covered By Your Grace', cursive;
+    font-size: 4rem;
+    color: black;
+    padding-bottom: 50px;
+}
+/* LANDING PAGE */
+.intro {
+    text-align: center;
+    transition: ease-in .3s;
+    font-family: 'Covered By Your Grace', cursive;
+    font-size: 4.5rem;
+    transform: rotate(-18deg);
+    max-width: 800px;
+    margin-top: 150px;
+    margin-left: 10%;
+}
+/* ABOUT ME */
+.about-img-holder {
+    text-align: center;
+    padding-bottom: 20px;
+}
+.about-me {
+    font-family: 'Covered By Your Grace', cursive;
+    font-size: 1.7rem;
 }
 .about-img {
     border-radius: 50px 8px 50px 8px;
     width: 29rem;
     height: 32rem;
     object-fit: cover;
-
 }
 .about-me-holder {
-    padding:0;
-    color:--primary-color;
+    padding: 0;
+    color: --primary-color;
     font-size: 1.4rem;
 }
-
-/* PROJECT SECTION */
+/* PROJECTS*/
 .project {
     align-content: center;
-}
-.projects p {
-    color:--primary-color;
-}
-.project-title {
-    color:--secondary-color;
-    font-weight: bold;
 }
 .project-img {
     padding-bottom: 8px;
@@ -89,68 +119,75 @@ header ul li a::after {
     align-self: left;
 }
 .project-img:hover {
-    opacity:150%;
+    opacity: 150%;
     transform: scale(1.2);
 }
 .project-info p {
     text-align: left;
     font-size: 1rem;
+    color: --primary-color;
 }
 .project-title {
     text-align: left;
     font-size: 1.5rem;
+    color: --secondary-color;
+    font-weight: bold;
 }
 
 /* CONTACT SECTION */
 .contact {
-    margin: 50px 10px 10px 10px;
-    width: 100%;
+    text-align: center;
+    font-family: 'Covered By Your Grace', cursive;
+    font-size: 4rem;
+    color: black;
+    padding-bottom: 50px;
 }
 .contact-img-holder {
     text-align: center;
-}
-.contact p {
-    color:--primary-color;
-}
-.contact a {
-    color:--primary-color;
+    padding: 0;
 }
 .logo-links {
     border-radius: 15px;
-    /*used code from stackoverflow*/
-    /* https://stackoverflow.com/questions/23695090/spin-or-rotate-an-image-on-hover */
-    -webkit-transition: -webkit-transform .8s ease-in-out;
-    transition: transform .8s ease-in-out;
-    height: 5rem;
-    width: 5rem;
+    height: 4rem;
+    width: 4rem;
 }
-.logo-links:hover {
-    border-radius: 30%;
-    /*used code from stackoverflow*/
-    /* https://stackoverflow.com/questions/23695090/spin-or-rotate-an-image-on-hover */
-    -webkit-transform: rotate(90deg);
-    transform: rotate(90deg);
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
 }
+
 /* Extra small devices (less than 576px)*/
-@media (max-width: 575.98px) { 
+@media (max-width: 575.98px) {
     .name {
         text-align: center;
     }
-    p .about-me { 
+
+    p .about-me {
         text-align: center;
         width: 95%;
         margin: 0;
     }
+
     .about-me-holder {
         margin: 0;
     }
-    .projects-deployed, .project-title {
+
+    .projects-deployed,
+    .project-title {
         text-align: center;
     }
+
     .project-info {
         text-align: center;
         margin: 2px 5px;
     }
+
     .project {
         text-align: center;
         margin: 20px 0;
@@ -190,6 +227,7 @@ header ul li a::after {
     .name {
         text-align: center;
     }
+
     .about-img {
         border-radius: 50px 8px 50px 8px;
         width: 27rem;
@@ -197,20 +235,25 @@ header ul li a::after {
         object-fit: cover;
         padding: 10px;
     }
+
     .about-me {
         margin: 0;
         padding: 0 15px;
         text-align: center;
     }
-    .projects-deployed, .project-title {
+
+    .projects-deployed,
+    .project-title {
         text-align: center;
     }
+
     .project-info {
         text-align: center;
         margin: 2px 5px;
     }
+
     .project {
         text-align: center;
         margin: 20px 0;
     }
- }
+}
