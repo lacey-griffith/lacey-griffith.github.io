@@ -4,7 +4,6 @@ function openNav() {
   function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
   }
-  
   // write into message to landing page //
   document.addEventListener('DOMContentLoaded', function() {
     writeText("#intro", "Hello! Thanks for stopping by, I look forward to connecting! -Lacey", 0, 85);
