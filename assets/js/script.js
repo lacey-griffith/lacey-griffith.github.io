@@ -1,5 +1,5 @@
 function openNav() {
-    document.getElementById("mySidenav").style.width = "170px";
+    document.getElementById("mySidenav").style.width = "120px";
   }
   function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
@@ -7,7 +7,7 @@ function openNav() {
   
   // write into message to landing page //
   document.addEventListener('DOMContentLoaded', function() {
-    writeText("#intro", "Hi! My name is Lacey Griffith. Thanks for stopping by, I look forward to connecting!", 0, 95);
+    writeText("#intro", "Hello! Thanks for stopping by, I look forward to connecting! -Lacey", 0, 85);
 });
 let writeText = function (target, message, index, interval) {
     if (index < message.length) {
