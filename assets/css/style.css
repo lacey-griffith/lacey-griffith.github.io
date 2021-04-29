@@ -1,11 +1,9 @@
-.background{
+.background {
 background-color: var(--teal);
 background-image: url('../images/blocks.PNG');
 background-size: 100%;
 background-repeat: no-repeat;
-background-attachment: fixed;
-background-position-x: 50%;
-background-position-y: 20%;
+
 }
 .background-solid {
     background-color: var(--teal);
@@ -20,10 +18,11 @@ background-position-y: 20%;
 }
 body {
     font-family: 'Covered By Your Grace', cursive;
+    background-color: var(--teal);
 }
 /*NAV BAR*/
 header nav {
-    margin-top: 20px;
+    margin-top: 10px;
     text-align: center;
 }
 header nav ul {
@@ -36,8 +35,8 @@ header nav ul {
 header nav ul li a {
     color: var(--lightteal);
     text-decoration: none;
-    font-size: 24px;
-    padding: 0 5px 0 5px;
+    font-size: 7vw;
+    padding: 0 2px 0 2px;
 }
 header nav ul li a:hover {
     color: var(--yellow);
@@ -45,24 +44,24 @@ header nav ul li a:hover {
 }
 /* LANDING PAGE*/
 .intro-message {
-    margin-top: 80px;
     text-align: right;
-    padding: 159px 62px 0 0;
-    font-size: 32px;
+    padding: 125px 68px 0 0;
+    font-size: 8vw;
     font-weight: bold;
+    padding-bottom: 75px;
 }
 /* ABOUT ME */
 .about-img-holder {
-    padding-top: 50px;
+    padding-top: 35px;
     text-align: center;
 }
 .about-me {
-    padding: 10px 20px 0 20px;
     font-family: 'Covered By Your Grace', cursive;
-    font-size: 20px;
+    font-size: 5.25vw;
+    padding: 2vw 4vw 1vw 4vw;
 }
 .about-img {
-    width: 270px;
+    width: 80%;
     height: auto;
     object-fit: cover;
 }
@@ -90,12 +89,12 @@ header nav ul li a:hover {
 }
 .project-info {
     text-align: left;
-    font-size: 20px;
+    font-size: 5.25vw;
     color: var(--black);
 }
 .project-title {
     text-align: center;
-    font-size: 28px;
+    font-size: 8vw;
     color:var(--yellow);
 }
 
@@ -112,12 +111,39 @@ header nav ul li a:hover {
 }
 .logo-links {
     border-radius: 15px;
-    height: 65px;
-    width: 65px;
+    height: 15vw;
+    width: 15vw;
     margin: 10px;
 }
 
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+    .background img {
+        padding-top: 180px;
+    }
+    .about-img {
+        width: 350px;
+        height: auto;
+    }
+    .about-me {
+        font-size: 24px;
+    }
+    .project-info {
+        font-size: 24px;
+    }
+    .project-title {
+        font-size: 12vw;
+    }
+ }
 
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {  }
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {  }
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {  }
 
 
 
