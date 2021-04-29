@@ -1,5 +1,14 @@
-html body{
+.background{
 background-color: var(--teal);
+background-image: url('../images/blocks.PNG');
+background-size: 100%;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position-x: 50%;
+background-position-y: 20%;
+}
+.background-solid {
+    background-color: var(--teal);
 }
 :root {
     --black: black;
@@ -14,7 +23,7 @@ body {
 }
 /*NAV BAR*/
 header nav {
-    margin-top: 20;
+    margin-top: 20px;
     text-align: center;
 }
 header nav ul {
@@ -22,55 +31,50 @@ header nav ul {
     flex-wrap: wrap;
     justify-content: space-between;
     list-style: none;
+    padding: 0;
 }
 header nav ul li a {
     color: var(--lightteal);
     text-decoration: none;
     font-size: 24px;
-    padding: 0 25px;
+    padding: 0 5px 0 5px;
 }
 header nav ul li a:hover {
     color: var(--yellow);
     text-decoration: none;
 }
-/* PAGE HEADERS */
-.page-header {
-    text-align: center;
-    font-family: 'Covered By Your Grace', cursive;
-    font-size: 4rem;
-    color: black;
-}
 /* LANDING PAGE*/
 .intro-message {
-    text-align: center;
-    font-size: 22px;
+    margin-top: 80px;
+    text-align: right;
+    padding: 159px 62px 0 0;
+    font-size: 32px;
     font-weight: bold;
 }
 /* ABOUT ME */
 .about-img-holder {
+    padding-top: 50px;
     text-align: center;
-    padding-bottom: 20px;
 }
 .about-me {
+    padding: 10px 20px 0 20px;
     font-family: 'Covered By Your Grace', cursive;
-    font-size: 1.7rem;
-    padding-bottom: 50px;
+    font-size: 20px;
 }
 .about-img {
-    border-radius: 50px 8px 50px 8px;
-    width: 29rem;
-    height: 32rem;
+    width: 270px;
+    height: auto;
     object-fit: cover;
-}
-.about-me-holder {
-    padding: 0;
-    color: --primary-color;
-    font-size: 1.4rem;
 }
 /* PROJECTS*/
 .project {
-    align-content: center;
-    padding-bottom: 25px;
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 20px;
+}
+.project-info a {
+    color: var(--lightteal);
+    text-decoration: none;
 }
 .project-img {
     padding-bottom: 8px;
@@ -79,40 +83,38 @@ header nav ul li a:hover {
     transition: transform .2s;
     height: 12rem;
     width: 20rem;
-    align-self: left;
 }
 .project-img:hover {
     opacity: 150%;
     transform: scale(1.2);
 }
-.project-info p {
+.project-info {
     text-align: left;
-    font-size: 1rem;
-    color: --primary-color;
+    font-size: 20px;
+    color: var(--black);
 }
 .project-title {
-    text-align: left;
-    font-size: 1.5rem;
-    color: --secondary-color;
-    font-weight: bold;
+    text-align: center;
+    font-size: 28px;
+    color:var(--yellow);
 }
 
 /* CONTACT SECTION */
 .contact {
+    padding-top: 20px;
     text-align: center;
     font-family: 'Covered By Your Grace', cursive;
-    font-size: 4rem;
-    color: black;
-    padding-bottom: 50px;
+    color: var(--black);
 }
 .contact-img-holder {
     text-align: center;
-    padding: 0;
+    flex: 1 100%;
 }
 .logo-links {
     border-radius: 15px;
-    height: 4rem;
-    width: 4rem;
+    height: 65px;
+    width: 65px;
+    margin: 10px;
 }
 
 
@@ -124,116 +126,3 @@ header nav ul li a:hover {
 
 
 
-
-
-
-
-
-
-
-
-@media screen and (max-height: 450px) {
-    .sidenav {
-        padding-top: 15px;
-    }
-
-    .sidenav a {
-        font-size: 18px;
-    }
-}
-
-/* Extra small devices (less than 576px)*/
-@media (max-width: 575.98px) {
-    .name {
-        text-align: center;
-    }
-
-    p .about-me {
-        text-align: center;
-        width: 95%;
-        margin: 0;
-    }
-
-    .about-me-holder {
-        margin: 0;
-    }
-
-    .projects-deployed,
-    .project-title {
-        text-align: center;
-    }
-
-    .project-info {
-        text-align: center;
-        margin: 2px 5px;
-    }
-
-    .project {
-        text-align: center;
-        margin: 20px 0;
-    }
-}
-
-/* Small devices (less than 768px)
-@media (max-width: 767.98px) { 
-    .name {
-        text-align: center;
-    }
-    .about-img {
-        border-radius: 50px 8px 50px 8px;
-        width: 27rem;
-        height: auto;
-        object-fit: cover;
-    }
-    .about-me {
-        margin: 0 15px;
-        text-align: center;
-    }
-    .projects-deployed, .project-title {
-        text-align: center;
-    }
-    .project-info {
-        text-align: center;
-        margin: 2px 5px;
-    }
-    .project {
-        text-align: center;
-        margin: 20px 0;
-    }
-}*/
-
-/* Medium devices (tablets, less than 992px)*/
-@media (max-width: 991.98px) {
-    .name {
-        text-align: center;
-    }
-
-    .about-img {
-        border-radius: 50px 8px 50px 8px;
-        width: 27rem;
-        height: auto;
-        object-fit: cover;
-        padding: 10px;
-    }
-
-    .about-me {
-        margin: 0;
-        padding: 0 15px;
-        text-align: center;
-    }
-
-    .projects-deployed,
-    .project-title {
-        text-align: center;
-    }
-
-    .project-info {
-        text-align: center;
-        margin: 2px 5px;
-    }
-
-    .project {
-        text-align: center;
-        margin: 20px 0;
-    }
-}
