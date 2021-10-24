@@ -86,7 +86,7 @@ $('li.nav-item > a').on('click', function(){
   const projects = [
       {
           name: 'Flower Shop',
-          image: '/images/flower_shop.png',
+          image: 'assets/images/flower_shop.png',
           description: 'Flower Shop was created to enhance the online shopping experience for users wanting to purchase and send flowers to friends or loved ones. We combined simplicity with effeciency and the result is a user friendly, information driven, e-commerce flower shop. Users can browse by occasion, find details on products, add and remove items from their cart quickly and checkout seamlessly.',
           githubLink: 'https://github.com/hbbc248/the-flower-store',
           deploymentLink: 'https://flower-shop-project-3.herokuapp.com/',
@@ -94,7 +94,7 @@ $('li.nav-item > a').on('click', function(){
       },
       {
           name: 'Namaste Fit',
-          image: '/images/namaste_fit.png',
+          image: 'assets/images/namaste_fit.png',
           description: 'This application allows yoga enthusiasts to learn more about yoga poses. Our motivation for developing Namaste Fit is to improve the experiences surrounding yoga, personal journeys and education. Created by a team of 4, it is our first full stack application. We implemented Handlebars.js with little experience and successfully connected our backend database with our frontend functionality.',
           githubLink: 'https://github.com/lacey-griffith/yoga',
           deploymentLink: 'https://yoga-finish.herokuapp.com/',
@@ -102,7 +102,7 @@ $('li.nav-item > a').on('click', function(){
       },
       {
           name: 'National Park Finder',
-          image: '/images/national_park_finder.png',
+          image: 'assets/images/national_park_finder.png',
           description: 'National Park Finder was developed to assist travelers in planning a trip to a national park by giving the user information such as activies, location and current weather. I implemented Foundations, a framework never used before this project! It was challenging at first but dedicating time to the documentation and trial and error eventually led to success. Team members all worked together by communicating often, helping solve problems, and deploying the final project.',
           githubLink: 'https://github.com/glendonintendo/national-park-finder',
           deploymentLink: 'https://glendonintendo.github.io/national-park-finder/',
@@ -110,7 +110,7 @@ $('li.nav-item > a').on('click', function(){
       },
       {
           name: 'Code Quiz',
-          image: '/images/code-quiz.png',
+          image: 'assets/images/code-quiz.png',
           description: 'Code Quiz allows students learning to code to test their knowledge of various compnents of Javascript. During this project I was learning to dynamically create objects from user input and to store data to use later. I was also getting my first exposure to implementing the use of local storage.',
           githubLink: 'github link',
           deploymentLink: 'deployment link',
@@ -118,7 +118,7 @@ $('li.nav-item > a').on('click', function(){
       },
       {
           name: 'Password Generator',
-          image: '/images/password_generator.png',
+          image: 'assets/images/password_generator.png',
           description: 'This application was created to help users generate a secure, randomized password based off their preferences for criteria. The length of the password and including lowercase, uppercase, numeric or special characters is all decided by the user. This project was my introduction to Javascript and the usefullness of the language became clearer as I progressed and learned more about the capabilities.',
           githubLink: 'https://github.com/lacey-griffith/friendly-parakeet',
           deploymentLink: 'https://lacey-griffith.github.io/friendly-parakeet/',
@@ -126,7 +126,7 @@ $('li.nav-item > a').on('click', function(){
       }, 
       {
           name: 'Budget Tracker',
-          image: '/images/budget_tracker.png',
+          image: 'assets/images/budget_tracker.png',
           description: 'Budget Tracker is an application to allow users to track their deposits and withdrawls while being online or off. As a PWA, progressive web application, it can be installed onto your phone or desktop and accessed at anytime. This project helped me understand that a PWA can truly increase user experience and meet their expectations of always having access to their applications.',
           githubLink: 'https://github.com/lacey-griffith/budget-tracker',
           deploymentLink: 'https://still-gorge-83604.herokuapp.com/',
@@ -134,7 +134,7 @@ $('li.nav-item > a').on('click', function(){
       },
       {
           name: 'Tech Blog',
-          image: '/images/tech_blog.png',
+          image: 'assets/images/tech_blog.png',
           description: 'This application was developed for bloggers to have a place to talk all things tech. It is versatile in the way that it could really be used for any blogger to start writing and sharing content. This project taught me how to utilize password security, session-storage and user authorization for specific activities (creating new posts, making comments) involving the server and database.',
           githubLink: 'https://github.com/lacey-griffith/tech-blog',
           deploymentLink: 'https://protected-headland-08406.herokuapp.com/',
@@ -144,22 +144,21 @@ $('li.nav-item > a').on('click', function(){
 
   projects.map(function(project){
     console.log('hit')
-    console.log(project.image)
     let projectCard = `
     <div class="col project">
                     <a href=${project.deploymentLink}><img class="project-img"
-                            src=${project.image} alt=${project.name}></a>
+                            src='${project.image}' alt=${project.name}></a>
                     <div class="project-info-holder">
                         <h3 class="project-title">${project.name}</h3>
                         <p class="project-info">
                             ${project.description}
                         </p>
-                        <p class="project-info">Click <a href="${project.githubLink}>here</a> to
+                        <p class="project-info">Click <a href="${project.githubLink}">here</a> to
                             visit the repository
                             for
                             this project.</p>
                     </div>
                 </div>`;
 
-    $('#projects-deployed > row').append(projectCard)
+    $('#projects-deployed').append(projectCard);
   });
