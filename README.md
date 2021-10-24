@@ -16,10 +16,10 @@ https://lacey-griffith.github.io/
 Made by Lacey Griffith
 
 ## Image
-![Site Image](assets/images/portfolio_v2_screenshot.png)
-![Site Image](assets/images/portfolio_v2_screenshot_about.png)
-![Site Image](assets/images/portfolio_v2_screenshot_projects.png)
-![Site Image](assets/images/portfolio_v2_screenshot_contact.png)
+![Site Image]()
+![Site Image]()
+![Site Image]()
+![Site Image]()
 
 ## Updates
 *Added additional projects (Code Quiz, Password Generator and Work Day Scheduler) and repositories for existing and new projects
