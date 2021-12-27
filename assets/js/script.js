@@ -143,7 +143,6 @@ $('li.nav-item > a').on('click', function(){
   ]
 
   projects.map(function(project){
-    console.log('hit')
     let projectCard = `
     <div class="col project">
                     <a href=${project.deploymentLink}><img class="project-img"
@@ -160,5 +159,5 @@ $('li.nav-item > a').on('click', function(){
                     </div>
                 </div>`;
 
-    $('#projects-deployed').append(projectCard);
+    $('#projects-deployed .row').append(projectCard);
   });
