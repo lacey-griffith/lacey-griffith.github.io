@@ -1,11 +1,11 @@
 //nav bar toggling
-$('li.nav-item > a').on('click', function(){
+$('.menu > a').on('click', function(){
   let sectionId = $(this).attr('id');
 
   $('section').addClass('display-none');
   $(`#${sectionId}-section`).removeClass('display-none');
 
-  $('button.navbar-toggler').click();
+  $('#menu-open').click();
 })
 
 //create projects
@@ -152,10 +152,7 @@ $('li.nav-item > a').on('click', function(){
                         <p class="project-info">
                             ${project.description}
                         </p>
-                        <p class="project-info">Click <a href="${project.githubLink}">here</a> to
-                            visit the repository
-                            for
-                            this project.</p>
+                        <div class="project-info"><a href="${project.githubLink}">Visit Repository</a></div>
                     </div>
                 </div>`;
 
