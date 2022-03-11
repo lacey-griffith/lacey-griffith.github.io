@@ -142,19 +142,43 @@ $('.menu > a').on('click', function(){
       }
   ]
 
+  let plus = `<svg width="9" height="9" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg">
+  <path d="M3.937 0v3.938H0v1.125h3.937V9h1.125V5.063H9V3.938H5.062V0z" fill="#202020" fill-rule="nonzero"/>
+</svg>`;
+
+    let minus = `<svg width="9" height="1.25" viewBox="0 0 9 1.25" xmlns="http://www.w3.org/2000/svg">
+  <path d="M0 .5h14v1.777H0z" fill="#202020" fill-rule="evenodd"/>
+</svg>`;
+
   projects.map(function(project){
     let projectCard = `
     <div class="col project">
                     <a href=${project.deploymentLink}><img class="project-img"
                             src='${project.image}' alt=${project.name}></a>
                     <div class="project-info-holder">
-                        <h3 class="project-title">${project.name}</h3>
-                        <p class="project-info">
-                            ${project.description}
-                        </p>
+                        <ul class="accordion">
+                            <li>
+                            <a class="toggle" href="javascript:void(0);">
+                            <h3 class="project-title">${project.name} <span> read more ${plus}</span></h3></a>
+                                <ul class="inner">
+                                    <li>${project.description}</li>
+                                </ul>
+                            </li>
+                        </ul>
                         <div class="project-info"><a href="${project.githubLink}">Visit Repository</a></div>
                     </div>
                 </div>`;
-
     $('#projects-deployed .row').append(projectCard);
   });
+
+  $('.toggle').click(function(e) {
+    if ($(this).next().hasClass('show')) {
+        $(this).find('span').html(`read more ${plus}`);
+        $(this).next().removeClass('show');
+        $(this).next().slideUp('slow');
+    } else {
+        $(this).find('span').html(`read less ${minus}`);
+        $(this).next().addClass('show');
+        $(this).next().slideDown('slow');
+    }
+  }); 

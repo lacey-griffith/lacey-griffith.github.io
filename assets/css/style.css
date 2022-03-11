@@ -91,8 +91,8 @@ body {
   }
   
   .menu-item:hover {
-    width: 84px;
-    height: 84px;
+    /*width: 84px;
+    height: 84px;*/
     text-decoration: none;
     color: #fff;
     cursor: pointer;
@@ -204,21 +204,95 @@ body {
 .project {
     display: flex;
     flex-direction: column;
-    max-width: 400px;
-    justify-content: center;
+    max-width: 350px;
+    justify-content: space-between;
     align-items: center;
     background-color: #fff;
     border: 2px solid #000;
     border-radius: 4px;
     margin: 10px;
     padding: 15px 25px;
-    flex: 1 0 30%;
+    flex: 1 0 100%;
 }
 
 .projects-deployed .row {
   justify-content: space-around;
 
 }
+
+.project-info,
+.project-title {
+  text-align: center;
+}
+
+.project-info a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: lowercase;
+  background: #008080;
+  border: 1px solid #008080;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+.project-info a:hover {
+ color: #008080;
+ background-color: #fff;
+}
+
+.project-title {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; 
+}
+
+.project-title span {
+  font-size: 14px;
+  flex: 1 0 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-title span svg {
+  margin-left: 3px;
+}
+
+/* project accordion */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul.inner {
+  padding-left: 1em;
+  overflow: hidden;
+  display: none;
+}
+
+ul.show {
+  display: block;
+}
+
+li {
+  margin: .5em 0;
+}
+
+li a.toggle {
+  width: 100%;
+  display: block;
+  color: #202020;
+  padding: .75em;
+  border-radius: 0.15em;
+  transition: background .3s ease;
+  text-decoration: none;
+}
+/* end accordion */
+
+
+
+
 /* contact */
 
 
@@ -263,4 +337,10 @@ body {
     transform: translate3d(-433.40705px, 11.66307px, 0);
   }
 
+  /* project */
+
+  .project {
+    max-width: 400px;
+    flex: 1 0 30%;
+  }
 }
