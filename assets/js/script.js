@@ -125,14 +125,6 @@ $('.menu > a').on('click', function(){
           techUsed: [tech[0], tech[1], tech[4]]
       }, 
       {
-          name: 'Budget Tracker',
-          image: 'assets/images/budget_tracker.png',
-          description: 'Budget Tracker is an application to allow users to track their deposits and withdrawls while being online or off. As a PWA, progressive web application, it can be installed onto your phone or desktop and accessed at anytime. This project helped me understand that a PWA can truly increase user experience and meet their expectations of always having access to their applications.',
-          githubLink: 'https://github.com/lacey-griffith/budget-tracker',
-          deploymentLink: 'https://still-gorge-83604.herokuapp.com/',
-          techUsed: [tech[0], tech[1], tech[4], tech[9], tech[11], tech[12], tech[14], tech[13]]
-      },
-      {
           name: 'Tech Blog',
           image: 'assets/images/tech_blog.png',
           description: 'This application was developed for bloggers to have a place to talk all things tech. It is versatile in the way that it could really be used for any blogger to start writing and sharing content. This project taught me how to utilize password security, session-storage and user authorization for specific activities (creating new posts, making comments) involving the server and database.',
