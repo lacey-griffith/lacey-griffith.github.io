@@ -167,10 +167,10 @@ $('.menu > a').on('click', function(){
     if ($(this).next().hasClass('show')) {
         $(this).find('span').html(`read more ${plus}`);
         $(this).next().removeClass('show');
-        $(this).next().slideUp('slow');
+        //$(this).next().slideUp('slow');
     } else {
         $(this).find('span').html(`read less ${minus}`);
         $(this).next().addClass('show');
-        $(this).next().slideDown('slow');
+        //$(this).next().slideDown('slow');
     }
   }); 
