@@ -14,7 +14,7 @@ function generateNavigation(){
             <li><a href="about.html" class="allButtons">about</a></li>
             <li><a href="projects.html" class="allButtons">projects</a></li>
             <li><a href="contact.html" class="allButtons">contact</a></li>
-            <li><a href="/assets/images/LaceyGriffith_2022.pdf" class="allButtons" target="_blank">resume</a></li>
+            <li><a href="assets/images/LaceyGriffith_2022.pdf" class="allButtons" target="_blank">resume</a></li>
         </ul>
     </nav>
   <!-- end nav bar -->`;
