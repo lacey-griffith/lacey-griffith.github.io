@@ -65,7 +65,7 @@ header nav ul li a:hover {
     height: auto;
     object-fit: cover;
 }
-/* PROJECTS*/
+/* PROJECTS
 .project {
     text-align: center;
     padding-bottom: 30px;
@@ -97,7 +97,22 @@ header nav ul li a:hover {
     font-size: 8vw;
     color:var(--yellow);
 }
+*/
 
+.slick-track {
+    display: flex;
+}
+div.slick-slide {
+    width: 100%;
+    max-width: 360px;
+}
+img.project-img {
+    max-height: 250px;
+    max-width: 100%;
+    width: auto;
+    height: 100%;
+    margin-bottom: 25px;
+}
 /* CONTACT SECTION */
 .contact {
     padding-top: 20px;
@@ -129,13 +144,13 @@ header nav ul li a:hover {
     }
     .about-img-holder {
         padding-top: 80px;
-    }
+    }/*
     .project-info {
         font-size: 4.5vw;
     }
     .project-title {
         font-size: 7vw;
-    }
+    }*/
  }
 
 /* Medium devices (tablets, 768px and up)*/
@@ -156,6 +171,7 @@ header nav ul li a:hover {
     .col {
         flex: 1 100%;
     }
+    /*
     .project-img {
         height: 18rem;
         width: 27rem;
@@ -165,7 +181,7 @@ header nav ul li a:hover {
     }
     .project-title {
         font-size: 6vw;
-    }
+    }*/
     .logo-links {
         height: 11vw;
         width: 11vw;
@@ -195,12 +211,14 @@ header nav ul li a:hover {
         flex: 1 100%;
     }
 
+    /*
     .project-info {
         font-size: 3vw;
     }
     .project-title {
         font-size: 4.5vw;
-    }
+    }*/
+
     .logo-links {
         height: 8vw;
         width: 8vw;
@@ -223,12 +241,14 @@ header nav ul li a:hover {
     .about-me {
         font-size: 3.25vw;
     }
+    /*
     .project-info {
         font-size: 2.25vw;
     }
     .project-title {
         font-size: 4vw;
     }
+    */
     .logo-links {
         height: 8vw;
         width: 8vw;
@@ -255,12 +275,14 @@ header nav ul li a:hover {
     .about-me {
         font-size: 2.75vw;
     }
+    /*
     .project-info {
         font-size: 2.25vw;
     }
     .project-title {
         font-size: 4vw;
-    }
+    }*/
+
     .logo-links {
         height: 6vw;
         width: 6vw;
