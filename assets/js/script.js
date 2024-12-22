@@ -132,5 +132,5 @@ const projects = [
 ]
 
 const generateProjects = () => {
-
+  
 }

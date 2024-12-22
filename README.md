@@ -1,4 +1,4 @@
-# Lacey Griffith's Portfolio
+# Lacey Hay's Portfolio
 
 ## Description
 This application was created to showcase my skills and experience as a Web Developer. It will be consitently updated as I learn and as I increase my deployed projects and learn new technologies.
