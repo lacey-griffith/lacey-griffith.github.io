@@ -1,10 +1,40 @@
-/*.background {
-background-color: var(--teal);
-background-image: url('../images/blocks.PNG');
-background-size: 100%;
-background-repeat: no-repeat;
+/*
+.roboto-thin {
+  font-family: "Roboto", serif;
+  font-weight: 100;
+  font-style: normal;
+}
 
-}*/
+.roboto-light {
+  font-family: "Roboto", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.roboto-regular {
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-medium {
+  font-family: "Roboto", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.roboto-bold {
+  font-family: "Roboto", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.roboto-black {
+  font-family: "Roboto", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+*/
 .background-solid {
     background-color: var(--teal);
 }
@@ -19,7 +49,10 @@ background-repeat: no-repeat;
 body {
     font-family: 'Covered By Your Grace', cursive;
     background-color: var(--teal);
+    padding: 0;
+    margin: 0;
 }
+
 /*NAV BAR*/
 header nav {
     margin-top: 10px;
@@ -65,39 +98,77 @@ header nav ul li a:hover {
     height: auto;
     object-fit: cover;
 }
+
 /* PROJECTS*/
-.project {
+
+.projects-deployed.swiper {
+    width: 90%;
+    height: 100%;
+    max-height: 550px;
+    margin-top: 100px;
+  }
+
+.projects-deployed .swiper-slide {
     text-align: center;
-    padding-bottom: 30px;
-    padding-top: 20px;
-}
-.project-info a {
-    color: var(--lightteal);
-    text-decoration: none;
-}
-.project-img {
-    padding-bottom: 8px;
-    border-radius: 10px;
-    opacity: 70%;
-    transition: transform .2s;
-    height: 12rem;
-    width: 20rem;
-}
-.project-img:hover {
-    opacity: 150%;
-    transform: scale(1.2);
-}
-.project-info {
-    text-align: left;
-    font-size: 5.25vw;
-    color: var(--black);
-}
-.project-title {
-    text-align: center;
-    font-size: 8vw;
-    color:var(--yellow);
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .projects-deployed .card-inner h1 {
+    font-family: 'Covered By Your Grace', cursive;
+  }
+
+  .projects-deployed .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    max-width: 300px;
+    height: auto;
+    margin: auto;
 }
 
+.projects-deployed .card-inner {
+    font-family: "Roboto", serif;
+    font-style: normal;
+    width: 100%;
+}
+
+.projects-deployed .card-inner p {
+    font-family: "Roboto", serif;
+    font-style: normal;
+    line-height: 1.25;
+    font-size: 14px;
+    width: 86%;
+    margin: 10px auto 15px auto;
+}
+
+.projects-deployed .tech-used {
+    display: flex;
+    overflow: scroll;
+    width: 100%;
+    padding-left: 10px;
+}
+
+span.tech-icon {
+    display: block;
+    min-width: fit-content;
+    padding: 5px;
+    background-color: #000;
+    border-radius: 35px;
+    color: #fff;
+    font-family: monospace;
+    font-size: 11px;
+    margin: 0 4px;
+}
+
+.projects-deployed .swiper-pagination-vertical.swiper-pagination-bullets, .swiper-vertical>.swiper-pagination-bullets {
+    right: var(--swiper-pagination-right,0px);
+}
 /* CONTACT SECTION */
 .contact {
     padding-top: 20px;
